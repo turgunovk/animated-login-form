@@ -14,6 +14,8 @@ body{
     min-height: 100vh;
     background: #23242a;
 }
+
+/* BOX STYLES */
 .box{
     position: relative;
     width: 380px;
@@ -69,6 +71,8 @@ body{
     text-align: center;
     letter-spacing: 0.1em;
 }
+
+/* INPUTBOX STYLES */
 .inputbox{
     position: relative;
     width: 300px;
@@ -89,7 +93,7 @@ body{
 .inputbox span{
     position: absolute;
     left: 0;
-    padding: 20px 10px 10px;
+    padding: 20px 0px 10px;
     font-size: 1em;
     color: #8f8f8f;
     pointer-events: none;
@@ -99,7 +103,7 @@ body{
 .inputbox input:valid ~ span,
 .inputbox input:focus ~ span{
     color: #45f3ff;
-    transform:translateX(-10px) translateY(-34px);
+    transform:translateX(0px) translateY(-34px);
     font-size: 0.75em;
 }
 .inputbox i{
@@ -117,4 +121,38 @@ body{
 .inputbox input:valid ~ i,
 .inputbox input:focus ~ i{
     height: 44px;
+}
+
+/* LINKS */
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.links a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.links a:hover,
+.links a:nth-child(2){
+    color: #45f3ff;
+}
+input[type="submit"]{
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+input[type="submit"]:hover{
+    opacity: 0.7;
+}
+input[type="submit"]:active{
+    opacity: 0.5;
 }
