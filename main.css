@@ -138,6 +138,12 @@ form h2{
 .links a:nth-child(2){
     color: #45f3ff;
 }
+.snbtn{
+    transition: opacity 0.2s ease;
+}
+.snbtn:hover{
+    opacity: 0.9;
+}
 input[type="submit"]{
     border: none;
     outline: none;
